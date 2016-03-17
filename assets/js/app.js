@@ -17,10 +17,12 @@ var App = function () {
 			jQuery('.header-fixed .header-sticky').addClass('header-fixed-shrink');
 			jQuery('.big-logo').addClass('hidden');
 			jQuery('.small-logo').removeClass('visible-xs-block').removeClass('visible-sm-block');
+			jQuery('.nav').removeClass('big-nav');
 		  } else {
 			jQuery('.header-fixed .header-sticky').removeClass('header-fixed-shrink');
 			jQuery('.big-logo').removeClass('hidden');
 			jQuery('.small-logo').addClass('visible-xs-block').addClass('visible-sm-block');
+			jQuery('.nav').addClass('big-nav');
 		  }
 		});
 	}
