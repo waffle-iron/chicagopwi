@@ -16,9 +16,16 @@ p.white-text, .btn-u.btn-brd { color: #ffffff; }
 	  height: 236px;
 	  max-height: none;
 	}
-	#layerslider{
-		padding-top: 142px;
+	#layerslider.push-down{
+		margin-top: 142px;
+		/*transition: 1s;*/
 	}
+}
+.ls-bg.ls-preloaded{
+	margin-top: -2px !important;
+}
+.owl-work-v1 .item a img, .owl-work-v1 .item a:hover img{
+		transform: scale(1) rotate(0deg);
 }
 .header-v6 .navbar-brand img.big-logo {
   width: auto;
@@ -29,3 +36,6 @@ p.white-text, .btn-u.btn-brd { color: #ffffff; }
 .footer-v1 .link-list li, .latest-list li { border-top: 1px solid #ffffff; }
 .footer-v1 .copyright { background: #466cb9; }
 .footer-v1 .footer-socials li a { color: #ffffff; }
+.footer a, .latest-list small {
+	color: #466cb9;
+}
