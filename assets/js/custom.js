@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  // Used for the Nav
   if ($("body.home").length > 0){
   	$('.nav_home').addClass('active');
   	$('.big-logo').removeClass('hidden');
@@ -21,4 +22,11 @@ $( document ).ready(function() {
   else if ($("body.blog").length > 0){
   	$('.nav_blog').addClass('active');
   }
+
+  // Used for the Collapse (services page)
+  
+  $(".collapse-link").click(function () {
+    var $this = $(this);
+    $('.collapse').removeClass("in")
+  });
 });
